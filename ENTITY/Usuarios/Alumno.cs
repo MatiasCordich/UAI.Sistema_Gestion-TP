@@ -9,9 +9,8 @@ namespace ENTITY
     /* Clase Alumno - Representa a un alumno en el sistema */
     public class Alumno : Usuario
     {
-        public string Legajo { get; set; }
 
-        // Un alumno tiene una lista de materias inscriptas
-        public List<Inscripcion> MateriasInscriptas { get; set; } = new List<Inscripcion>();
+        // Columna específica de la tabla
+        public string Legajo { get; set; }
     }
 }

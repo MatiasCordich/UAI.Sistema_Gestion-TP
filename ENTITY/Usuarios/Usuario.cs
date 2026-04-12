@@ -9,6 +9,7 @@ namespace ENTITY
     /* Clase Usuario - Es una clase base para los usuarios del sistema */
     public abstract class Usuario
     {
+        // Columnas de la tabla
         public int Id { get; set; }
         public string DNI { get; set; }
         public string Nombre { get; set; }
@@ -18,7 +19,8 @@ namespace ENTITY
         public string Rol { get; set; }
         public bool Activo { get; set; }
 
-        // Propiedad Calculada para obtener el nombre completo del usuario
+        // Propiedades Calculadas
         public string NombreCompleto => $"{Apellido}, {Nombre}";
+       
     }
 }
