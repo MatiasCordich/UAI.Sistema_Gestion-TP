@@ -32,7 +32,7 @@ namespace UAI.Sistema_Gestion_TP.Login
                 /* El Formulario Principal ni bien inicia el programa es el Container */
                 MainForm mainForm = (MainForm)this.MdiParent;
 
-                /* Ínvocamos la función donde setea el menú del Formulario Principal según rol */
+                /* Invocamos la función donde setea el menú del Formulario Principal según rol */
                 mainForm.SetMenuByRol();
 
                 /* Se cierra el formulario de Login */
