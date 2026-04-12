@@ -45,6 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlumnoMateriaDAL.cs" />
+    <Compile Include="EntregaDAL.cs" />
+    <Compile Include="MateriaDAL.cs" />
+    <Compile Include="ProfesorMateriaDAL.cs" />
+    <Compile Include="TrabajoPracticoDAL.cs" />
     <Compile Include="UsuarioDAL.cs" />
     <Compile Include="Conexion\AccesoDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
