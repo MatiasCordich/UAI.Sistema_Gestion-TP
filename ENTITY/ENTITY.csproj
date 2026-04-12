@@ -42,10 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entrega.cs" />
+    <Compile Include="ProfesorMateria.cs" />
     <Compile Include="TrabajoPractico.cs" />
     <Compile Include="Usuarios\Admin.cs" />
     <Compile Include="Usuarios\Alumno.cs" />
-    <Compile Include="Inscripcion.cs" />
+    <Compile Include="AlumnoMateria.cs" />
     <Compile Include="Materia.cs" />
     <Compile Include="Usuarios\Profesor.cs" />
     <Compile Include="Usuarios\Usuario.cs" />
