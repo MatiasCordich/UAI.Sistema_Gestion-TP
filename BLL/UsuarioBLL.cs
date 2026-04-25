@@ -51,9 +51,10 @@ namespace BLL
 
             /* Regla 4. Formato de contraseña válido */
             ValidarPassword(user.Password);
-            
+
             /* Regla 5. DNI único */
-            if (_usuarioDAL.ExisteDNI(user.DNI)) {
+            if (_usuarioDAL.ExisteDNI(user.DNI))
+            {
                 throw new Exception("Ya existe un usuario registrado con ese DNI.");
             }
 
@@ -139,7 +140,7 @@ namespace BLL
         }
 
         /* ------------------------------------------ [METODOS AUXILIARES] ------------------------------------------ */
-        
+
         // -----------------------------------------------------------
         // VALIDAR CAMPOS OBLIGATORIOS
         // -----------------------------------------------------------
@@ -169,7 +170,7 @@ namespace BLL
         {
 
             /* Se valida que la contraseña tenga mínimo 6 caracteres */
-            if (pass.Length < 6) 
+            if (pass.Length < 6)
                 throw new Exception("La contraseña debe tener al menos 6 caracteres.");
 
             /* Se valida que la constraseña deba ser alfanumerica */
@@ -178,6 +179,6 @@ namespace BLL
 
         }
 
-        
+
     }
 }
