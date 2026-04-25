@@ -143,10 +143,11 @@
             // 
             // BtnCerrarSesion
             // 
+            this.BtnCerrarSesion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.BtnCerrarSesion.Name = "BtnCerrarSesion";
-            this.BtnCerrarSesion.Size = new System.Drawing.Size(229, 36);
+            this.BtnCerrarSesion.Size = new System.Drawing.Size(270, 36);
             this.BtnCerrarSesion.Text = "Cerrar Sesión";
-            this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click_1);
+            this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
             // 
             // label1
             // 
