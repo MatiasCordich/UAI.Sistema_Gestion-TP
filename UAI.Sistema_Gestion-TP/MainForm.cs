@@ -50,7 +50,7 @@ namespace UAI.Sistema_Gestion_TP
         }
 
         /* Botón para cerrar sesión */
-        private void BtnCerrarSesion_Click_1(object sender, EventArgs e)
+        private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
 
             /* Invocamos la función para desloguarse y setear el usuario a Null */
@@ -73,6 +73,7 @@ namespace UAI.Sistema_Gestion_TP
             /* Invocamos la función que activa el evento Load del Formulario Principal*/
             MainForm_Load(null, null);
 
+
         }
 
         private void MenuListarUsuarios_Click(object sender, EventArgs e)
@@ -92,5 +93,7 @@ namespace UAI.Sistema_Gestion_TP
 
             listarUsuariosForm.Show();
         }
+
+        
     }
 }
