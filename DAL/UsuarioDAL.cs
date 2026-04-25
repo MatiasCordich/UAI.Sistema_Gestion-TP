@@ -288,5 +288,25 @@ namespace DAL
             return Convert.ToInt32(tabla.Rows[0][0]) > 0;
         }
 
+        // -----------------------------------------------------------------------------------------------------------------------
+        // OBTENER PASSWORD ACTUAL - Devuelve el hash de la contraseña actual del usuario.
+        // Usado en ModificarUsuario cuando el usuario no cambia su contraseña.
+        // -----------------------------------------------------------------------------------------------------------------------
+        public string ObtenerPasswordActual(int id)
+        {
+            string sql = "SELECT PASSWORD FROM Usuario WHERE ID_USUARIO = @id";
+
+            SqlParameter[] parametros = {
+                new SqlParameter("@id", SqlDbType.Int) { Value = id }
+            };
+
+            DataTable tabla = access.Read(sql, parametros);
+
+            if (tabla.Rows.Count == 0)
+                return null;
+
+            return tabla.Rows[0]["PASSWORD"].ToString();
+        }
+
     }
 }
